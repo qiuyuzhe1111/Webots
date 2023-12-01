@@ -1,0 +1,223 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5895188251117701 0.5765993213257904 -0.5656861121553862 2.130858299589165
+  position -0.22864563771462093 -0.08715851811884437 2.975660763222607
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  translation 0.0608928 -0.0180144 1.13798e-15
+  rotation 0 0 -1 0.0883573
+  floorSize 2 2
+  floorTileSize 4 4
+}
+DEF E-pucktarget E-puck {
+  translation -0.595244 -0.718535 -7.02286e-05
+  rotation -0.000655682228862041 0.0004982018986615306 0.999999660937784 1.343042790468519
+  name "e-puck(3)"
+  controller "target_control"
+  controllerArgs [
+    ""
+  ]
+  supervisor TRUE
+  version "2"
+}
+DEF E-puck2 E-puck {
+  hidden position_0_0 11.37409287211319
+  hidden position_0_1 4.747340617666511
+  hidden rotation_1 0 -1 0 1.1922777422459834
+  hidden rotation_2 0 0.9999999999999999 0 4.747340617666511
+  translation -0.508046 0.83197 -6.45617e-05
+  rotation -0.0002931769399165023 0.0005691448833598055 0.9999997950606709 -0.8157253071795862
+  name "e-puck2"
+  controller "apf1"
+  supervisor TRUE
+}
+DEF E-puck3 E-puck {
+  hidden position_0_0 9.943033873041443
+  hidden position_0_1 6.183010147397738
+  hidden rotation_1 0 -1 0 2.6233367413177295
+  hidden rotation_2 0 0.9999999999999999 0 6.183010147397739
+  translation -0.286591 0.72774 0.009936
+  rotation 3.732479995629158e-05 3.080449996392704e-05 0.9999999988289712 -2.001145307179586
+  name "e-puck3"
+  controller "apf1"
+  supervisor TRUE
+}
+DEF E-puck1 E-puck {
+  hidden position_0_0 8.100270944789015
+  hidden position_0_1 8.026736391645459
+  hidden rotation_1 0 -1 0 4.466099669570157
+  hidden rotation_2 0 -1 0 4.539634222713714
+  translation -0.140642 0.75633 -6.40173e-05
+  rotation 0.0006713578482171588 -3.801599140521675e-05 -0.9999997739166864 1.23459
+  name "e-puck1"
+  controller "apf1"
+  supervisor TRUE
+}
+DEF obs1 Solid {
+  translation -0.206178 0.280224 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
+DEF obs2 Solid {
+  translation 0.114972 -0.460693 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
+DEF obs3 Solid {
+  translation 0.207047 0.367352 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
+DEF obs4 Solid {
+  translation 0.393614 -0.158975 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
+DEF obs5 Solid {
+  translation -0.56644 -0.405605 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
+DEF obs6 Solid {
+  translation -0.355215 0.0355591 0.05
+  rotation 0 0 1 5.36782
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../../Downloads/c37b32a6f2b4c8cff0d6c4458722cee0.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF CYL_GEOM Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE CYL_GEOM
+  recognitionColors [
+    1 0.333333 0.498039
+  ]
+}
